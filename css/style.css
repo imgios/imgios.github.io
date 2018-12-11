@@ -6,6 +6,16 @@ body {
 	background-color: #F9F9F9;
 }
 
+::-moz-selection { /* Firefox */
+  color: #F9F9F9;
+  background: #65C9FF;
+}
+
+::selection {
+  color: #F9F9F9;
+  background: #65C9FF;
+}
+
 a:link {
   color: #65C9FF;
 }
