@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+
+/* https://bootswatch.com/4/lux/bootstrap.css */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.navbar-brand {
+	letter-spacing: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header {
+	padding: 15rem 0;
+}
+
+header #avatar {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	max-width: 250px !important;
+	height: auto !important;"
+}
+
+header #avatar:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+
+section {
+	padding: 5rem 0;
+}
+
+footer {
+	padding: 2rem;
+}
+
+#f-seclinks li {
+	padding-right: .7rem;
+}
+
+footer a, footer a:active, footer a:visited {
+	color: #fff !important;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .5s ease;
+}
+
+footer a:hover {
+	background-size: 100% 2px;
+	text-decoration: none;
+}
+
+#social-links a {
+	color: #ffffff;
+	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .5s ease;
+}
+
+#social-links a:hover {
+	background-size: 100% 2px;
+	text-decoration: none;
+}
+
+.nav-links {
+	text-transform: uppercase;
+}
+
+.active {
+	font-weight: 600;
+}
+
+.nav-links a, .nav-links a:hover, .nav-links a:visited, .nav-links a:active {
+	color: #000000;
+}
+
+.bg-black {
+	background-color: #1a1a1a !important;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn:active, .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+}
+
+.btn-black {
+	background-color: #1a1a1a;
+	border-color: #1a1a1a !important;
+	color: #FFFFFF !important;
+}
+
+.btn-black:hover, .btn-black:active {
+	border-color: #00000;
+	background-color: #000000;
+	color: #FFFFFF !important;
+	border-color: #1a1a1a !important;
+}
+
+.btn-outline-black {
+	border-color: #1a1a1a;
+	color: #1a1a1a !important;
+}
+
+.btn-outline-black:hover, .btn-outline-black:active {
+	border-color: #00000;
+	background-color: #000000;
+	color: #FFFFFF !important;
+	border-color: #1a1a1a !important;
+}
+
+.progress {
+	border-radius: 0 !important;
+}
+
+.underline-light {
+	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+.underline-dark {
+	background-image: linear-gradient(to right, #343A40, #343A40);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+.fab {
+	background-color: #FFFFFF;
+	color:  #1a1a1a;
+	padding: 15px 15px;
+}
+
+.bg-darker {
+	background-color: #282828 !important;
+}
