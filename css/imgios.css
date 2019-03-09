@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Karla");
 
-/* https://bootswatch.com/4/lux/bootstrap.css */
-
 html {
 	scroll-behavior: smooth;
 }
@@ -43,13 +41,8 @@ footer {
 	padding: 2rem;
 }
 
-#f-seclinks li {
-	padding-right: .7rem;
-}
-
-footer a, footer a:active, footer a:visited {
+footer a, footer a:active, footer a:visited, #s-socials a {
 	color: #fff !important;
-	letter-spacing: 2px;
 	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
 	background-position: bottom left;
 	background-repeat: no-repeat;
@@ -57,35 +50,18 @@ footer a, footer a:active, footer a:visited {
 	transition: background-size .5s ease;
 }
 
-footer a:hover {
+footer a:hover, #s-socials a:hover {
 	background-size: 100% 2px;
 	text-decoration: none;
-}
-
-#social-links a {
-	color: #ffffff;
-	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
-	background-position: bottom left;
-	background-repeat: no-repeat;
-	background-size: 0% 2px;
-	transition: background-size .5s ease;
-}
-
-#social-links a:hover {
-	background-size: 100% 2px;
-	text-decoration: none;
-}
-
-.nav-links {
-	text-transform: uppercase;
 }
 
 .active {
 	font-weight: 600;
 }
 
-.nav-links a, .nav-links a:hover, .nav-links a:visited, .nav-links a:active {
+.nav-links, .nav-links a, .nav-links a:hover, .nav-links a:visited, .nav-links a:active {
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .bg-black {
@@ -148,12 +124,6 @@ footer a:hover {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 100% 2px;
-}
-
-.fab {
-	background-color: #FFFFFF;
-	color:  #1a1a1a;
-	padding: 15px 15px;
 }
 
 .bg-darker {
