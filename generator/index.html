@@ -8,6 +8,8 @@
 	<meta name="description" content="Random strong password generator.">
 	<meta name="keywords" content="giosuè sulipano, gios, imgios. password, password generator, generator">
     <title>Password Generator</title>
+	<!-- custom css -->
+	<link rel="stylesheet" href="../css/imgios.css">
 	<!-- bootstrap things -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -15,30 +17,82 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<!-- pswgenerator script -->
 	<script src="./js/therealgenerator.js"></script>
+	<!-- toast css -->
+	<style>
+		#snackbar {
+		  visibility: hidden; /* Hidden by default. Visible on click */
+		  min-width: 250px; /* Set a default minimum width */
+		  margin-left: -125px; /* Divide value of min-width by 2 */
+		  background-color: #333; /* Black background color */
+		  color: #fff; /* White text color */
+		  text-align: center; /* Centered text */
+		  border-radius: 2px; /* Rounded borders */
+		  padding: 16px; /* Padding */
+		  position: fixed; /* Sit on top of the screen */
+		  z-index: 1; /* Add a z-index if needed */
+		  left: 50%; /* Center the snackbar */
+		  bottom: 30px; /* 30px from the bottom */
+		}
+
+		/* Show the snackbar when clicking on a button (class added with JavaScript) */
+		#snackbar.show {
+		  visibility: visible; /* Show the snackbar */
+		  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+		  However, delay the fade out process for 2.5 seconds */
+		  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+
+		/* Animations to fade the snackbar in and out */
+		@-webkit-keyframes fadein {
+		  from {bottom: 0; opacity: 0;} 
+		  to {bottom: 30px; opacity: 1;}
+		}
+
+		@keyframes fadein {
+		  from {bottom: 0; opacity: 0;}
+		  to {bottom: 30px; opacity: 1;}
+		}
+
+		@-webkit-keyframes fadeout {
+		  from {bottom: 30px; opacity: 1;} 
+		  to {bottom: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+		  from {bottom: 30px; opacity: 1;}
+		  to {bottom: 0; opacity: 0;}
+		}
+	</style>
   </head>
   <body>
-	<div class="container mx-auto my-5">
-		<p class="h2">Password generator 🔐</p>
-		<form onsubmit="generate()">
-			<div class="row">
-				<div class="col-sm-3 form-group">
-					<label for="pswLenght">Length</label>
-				</div>
-				<div class="col-sm-3 form-group">
-					<input type="number" class="form-control form-control-sm" id="pswLength" value="8" min="8" max="25">
-				</div>
-				<div class="col-sm-2 form-group">
-					<button type="submit" class="btn btn-block btn-outline-success" id="generatePsw">Generate</button>
-				</div>
-				<div class="col-sm-6 form-group">
-					<input type="text" class="form-control" id="pswGenerated" placeholder="Here you will find the password made with the tool." readonly>
-				</div>
-				<div class="col-sm-2 form-group">
-					<button class="btn btn-block btn-danger" id="pswCopy" data-toggle="tooltip" data-placement="right" title="Password copied!">Copy</button>
-				</div>
-			</div>			
-		</form>
-		<p class="text-center"><a href="https://imgios.github.io">Go back to imgios.github.io</a></p>
-	</div>
+	<section id="generator">
+		<div class="container mx-auto my-5">
+			<h3>Password generator 🔐</h3>
+			<form onsubmit="generate()">
+				<div class="row">
+					<div class="col-sm-3 form-group">
+						<label for="pswLenght">Length</label>
+					</div>
+					<div class="col-sm-3 form-group">
+						<input type="number" class="form-control form-control-sm" id="pswLength" value="8" min="8" max="128">
+					</div>
+					<div class="col-sm-2 form-group">
+						<button type="submit" class="btn btn-block btn-outline-success" id="generatePsw">Generate</button>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input type="text" class="form-control" id="pswGenerated" placeholder="Here you will find the password made with the tool." readonly>
+					</div>
+					<div class="col-sm-2 form-group">
+						<button class="btn btn-block btn-danger" id="pswCopy">Copy</button>
+					</div>
+				</div>			
+			</form>
+			<p class="text-center"><a href="../index.html">Go back to imgios.github.io</a></p>
+		</div>
+	</section>
+	<!-- ./generator -->
+	<div id="snackbar"></div>
+	<!-- ./snackbar -->
   </body>
 </html>

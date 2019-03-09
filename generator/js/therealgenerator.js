@@ -1,12 +1,7 @@
 /**
 *	@author Giosuè Sulipano
 */
-$(document).ready(function () {
-	$('#pswCopy').tooltip({
-		trigger: 'manual',
-		delay: {show: 0, hide: 500}
-	});
-	
+$(document).ready(function () {	
 	/**
 	*	@description This function create a new random string, choosing random chars from the var 'chars'.
 	*/
@@ -16,17 +11,19 @@ $(document).ready(function () {
 		var password = "";
 		var length = $('#pswLength').val();
 		
-		for (var i = 0; i < length; i++) {
-			var random = Math.floor(Math.random() * chars.length);
-			console.log(random);
-			console.log(chars[random]);
-			password += chars[random];
-			console.log(i);
+		if (length < 8 || length > 128) {
+			$('#snackbar').html("You selected an invalid length!<br/>Min: 8<br/>Max: 128").addClass("show");
+			setTimeout(function() {$('#snackbar').removeClass("show");}, 3000);
+		} else {		
+			for (var i = 0; i < length; i++) {
+				var random = Math.floor(Math.random() * chars.length);
+				console.log(random);
+				console.log(chars[random]);
+				password += chars[random];
+			}
+			
+			$("#pswGenerated").val(password);
 		}
-		
-		console.log(password);
-		
-		$("#pswGenerated").val(password);
 	});
 
 	/**
@@ -34,8 +31,14 @@ $(document).ready(function () {
 	*/
 	$("#pswCopy").on("click", function() {
 		event.preventDefault();
-		$("#pswGenerated").select();
-		document.execCommand("copy");
-		$('#pswCopy').tooltip('show').delay(5000).tooltip('hide');
+		if ($("#pswGenerated").val() === "") {
+			$('#snackbar').text("You must generate a new string first!");
+		} else {
+			$("#pswGenerated").select();
+			document.execCommand("copy");
+			$('#snackbar').text("String copied inside the clipboard!");
+		}
+		$('#snackbar').addClass("show");
+		setTimeout(function() {$('#snackbar').removeClass("show");}, 3000);
 	});
 });

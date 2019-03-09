@@ -7,6 +7,15 @@
 	<meta name="author" content="Giosuè Sulipano">
 	<meta name="description" content="Official website of Giosuè Sulipano.">
 	<meta name="keywords" content="giosuè sulipano, gios, imgios">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png?v=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png?v=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png?v=1">
+	<link rel="manifest" href="./images/site.webmanifest?v=1">
+	<link rel="mask-icon" href="./images/safari-pinned-tab.svg?v=1" color="#000000">
+	<link rel="shortcut icon" href="./images/favicon.ico?v=1">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="./images/browserconfig.xml?v=1">
+	<meta name="theme-color" content="#ffffff">
 	<!-- OGP -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://imgios.github.io/">
@@ -16,24 +25,188 @@
 	<!-- page title -->
     <title>Giosuè Sulipano</title>
     <!-- basic css -->
-    <link rel="stylesheet" href="./css/style.css">
-	<!-- animate.css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/imgios.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
-  <body>
-	<div class="mainbox">
-		<section class="slideInDown animated slow" style="display: block;">
-			<img class="avatar" src="./images/avatar.png">
-			<p><span class="imgios underline">Giosuè Sulipano</span></p>
-			<p class="summary">
-				Hey! I'm a Computer Science student.
+  <body id="top" data-spy="scroll" data-target="#imgios-nav">
+	<nav id="imgios-nav" class="navbar sticky-top navbar-light bg-white">
+		<div class="container">
+			<a class="navbar-brand text-uppercase" href="#top">Giosuè <strong>Sulipano</strong></a>
+			<ul class="nav nav-links list-inline text-right my-auto">
+				<li class="nav-item list-inline-item"><a class="nav-link" href="#about-me">About</a></li>
+				<li class="nav-item list-inline-item"><a class="nav-link" href="#skills">Skills</a></li>
+				<li class="nav-item list-inline-item"><a class="nav-link" href="#projects">Projects</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ./nav -->
+	<header class="bg-light text-dark">
+		<div class="container-fluid my-auto">
+			<div class="row">
+				<div class="col-lg-12 text-center my-auto">
+					<img id="avatar" src="./images/realgios.jpg" class="rounded-circle py-3" alt="Giosuè Sulipano">
+					<h2>Giosuè Sulipano</h2>
+					<p class="lead">
+						Computer Science student at <span class="font-weight-bold">UNISA</span>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ./header -->
+	<section id="s-about" class="bg-black text-light">
+		<div class="container">
+			<h3 class="mb-4" id="about-me">About me</h3>
+			<p class="lead">Hey, Giosuè Sulipano here!</p>
+			<p>
+				I'm 22 years old and I'm a Computer Science student at the University of Salerno.
+				<br/>I'm a Computer enthusiast and I love everything related to him.
+				<br/>Fascinated by <span class="underline-light">software development</span>, <span class="underline-light">security</span> and <span class="underline-light">machine learning</span>.
 			</p>
-			<p class="socials">
-				<a href="https://github.com/imgios"><i class="fab fa-github"></i></a> <a href="https://www.instagram.com/imgios/"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/in/imgios/"><i class="fab fa-linkedin"></i></a>
+			<p>
+				In the past, I was involved in some web management of different website, some built with most popular CMS and forum boards like Wordpress, Joomla, vBulletin, XenForo, MyBB and phpBB. During this time, I learned the usage of those CMS and forum boards and the basics of HTML and CSS by myself. In the high school I approached the world of algorithms, Visual Basic and refined my HTML knowledge.
 			</p>
-		</section>
-	</div>
+			<p>
+				Currently, I'm a <strong>last-year Computer Science degree student</strong>. In those years I learned a bunch of things, such as <strong>C</strong>, <strong>Java</strong>, <strong>algorithms and data structures</strong> and much more.
+			</p>
+		</div>
+	</section>
+	<!-- ./s-about -->
+	<section id="s-skills" class="bg-white text-dark">
+		<div class="container">
+			<h3 class="mb-4" id="skills">Skills</h3>
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					HTML5
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-html -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					CSS3
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-css -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					JavaScript
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-js -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					Java
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-java -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					C
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-c -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					Angular
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-angular -->
+			<div class="row">
+				<div class="col-lg-4 my-auto text-right">
+					SQL
+				</div>
+				<div class="col-lg-6 my-auto">
+					<div class="progress">
+						<div class="progress-bar bg-black" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<!-- ./skill-sql -->
+		</div>
+	</section>
+	<!-- ./s-skills -->
+	<section id="s-projects" class="bg-white text-dark">
+		<div class="container">
+			<h3 class="mb-4" id="projects">Projects</h3>
+			<div class="media">
+				<img src="./images/gios-260x260.png" class="align-self-center mr-3" style="width: 100%; max-width: 65px; height: auto;" alt="imgios.github.io">
+				<div class="media-body">
+					<h5 class="mt-0">Portfolio</h5>
+					<ul class="list-inline">
+						<li class="list-inline-item">HTML5</li>
+						<li class="list-inline-item">CSS3</li>
+						<li class="list-inline-item">Bootstrap 4</li>
+						<li class="list-inline-item"><a href="https://github.com/imgios/imgios.github.io" alt="Check imgios.github.com on GitHub!" target="_blank">Check it out on GitHub!</a></li>
+					</ul>
+					<p>Nothing much, just my personal website. It's like a little window on me. It has different sections that talks about me, my projects and skills. Made it in my spare time with some HTML5 & CSS3 basics, using the famous front-end library Bootstrap.</p>
+				</div>
+			</div>
+			<!-- ./imgios-portfolio -->
+			<div class="media">
+				<img src="https://raw.githubusercontent.com/andryval93/erasmus-smart/master/src/assets/imgs/logo.png" class="align-self-center mr-3" style="width: 100%; max-width: 65px; height: auto;" alt="Erasmus Smart">
+				<div class="media-body">
+					<h5 class="mt-0">Erasmus Smart</h5>
+					<ul class="list-inline">
+						<li class="list-inline-item">Angular 5</li>
+						<li class="list-inline-item">Ionic 3</li>
+						<li class="list-inline-item">HTML & CSS</li>
+						<li class="list-inline-item">TypeScript</li>
+						<li class="list-inline-item"><a href="https://github.com/andryval93/erasmus-smart" alt="Check Erasmus Smart on GitHub!" target="_blank">Check it out on GitHub!</a></li>
+					</ul>
+					<p>Erasmus Smart is a <span class="underline-dark">Sofware Engineering</span> project for academic purposes. With a 10-man team, we developed it in three months. It's a web application built with Ionic 3 and Angular 5, that aims to offer support to the students, tutors and Erasmus Office of the Computer Science department of <abbr title="University of Salerno" class="initialism">UNISA</abbr>, involved in outgoing Erasmus.</p>
+				</div>
+			</div>
+			<!-- ./erasmus-smart -->
+		</div>
+	</section>
+	<!-- ./s-projects -->
+	<section id="s-socials" class="bg-darker text-light">
+		<div class="container text-center mx-auto">
+			<ul class="list-inline mx-auto text-uppercase">
+				<li class="list-inline-item px-2"><a href="https://github.com/imgios" alt="Giosuè Sulipano on GitHub!" target="_blank">Github</a></li>
+				<li class="list-inline-item px-2"><a href="https://www.linkedin.com/in/imgios/" alt="Giosuè Sulipano on LinkedIn!" target="_blank">LinkedIn</a></li>
+				<li class="list-inline-item px-2"><a href="https://www.instagram.com/imgios/" alt="Giosuè Sulipano on LinkedIn!" target="_blank">Instagram</a></li>
+			</ul>
+		</div>
+	</section>
+	<footer class="container-fluid bg-black sticky-bottom">
+		<div class="container text-light">
+			Made with ❤ using <a href="https://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a>.
+		</div>
+	</footer>
   </body>
 </html>
