@@ -25,7 +25,7 @@ header #avatar {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	max-width: 250px !important;
-	height: auto !important;"
+	height: auto !important;
 }
 
 header #avatar:hover {
@@ -46,7 +46,7 @@ footer a, footer a:active, footer a:visited, #s-socials a {
 	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
 	background-position: bottom left;
 	background-repeat: no-repeat;
-	background-size: 0% 2px;
+	background-size: 0 2px;
 	transition: background-size .5s ease;
 }
 
@@ -74,7 +74,6 @@ footer a:hover, #s-socials a:hover {
 
 .btn:active, .btn.active {
     background-image: none;
-    outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
