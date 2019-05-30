@@ -212,5 +212,14 @@
 			Handcrafted with ❤ using <a class="font-weight-bold" href="https://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a>.
 		</div>
 	</footer>
+	<script>
+		document.querySelectorAll('nav a').forEach(link => {
+		  link.addEventListener('click', () => {
+		    setTimeout(() => {
+		      history.pushState('', document.title, window.location.pathname);
+		    }, 100);
+		  });
+		});
+	</script>
   </body>
 </html>
