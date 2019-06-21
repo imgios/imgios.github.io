@@ -107,10 +107,6 @@ footer a:hover, #s-socials a:hover {
 	border-color: #1a1a1a !important;
 }
 
-.progress {
-	border-radius: 0 !important;
-}
-
 .underline-light {
 	background-image: linear-gradient(to right, #F8F9FA, #F8F9FA);
     background-position: bottom left;
