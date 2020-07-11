@@ -1,4 +1,4 @@
 ## imgios.github.io
-This repository is the :heart: of my static website. You can find it [here](https://imgios.github.io) or [here](http://giosuesulipano.it).
+This repository is the :heart: of my static website, available on [giosuesulipano.it](http://giosuesulipano.it).
 
-I did it in HTML5 and CSS3, using [Bootstrap](https://github.com/twbs/bootstrap).
+The website is made with plain HTML, usign the framework [Bootstrap](https://github.com/twbs/bootstrap).
