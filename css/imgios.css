@@ -35,11 +35,6 @@ header .row {
 	letter-spacing: 2px;
 }
 
-#header-box h1:before {
-	content:'> ';
-	color: yellow;
-}
-
 #header-box a, #header-box a:visited {
 	color: white !important;
 	background-image: linear-gradient(to right, yellow, yellow);
