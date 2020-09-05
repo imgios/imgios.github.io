@@ -27,9 +27,9 @@ header .row {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
-#header-box {
+/* #header-box {
 	border-left: 3px solid yellow;
-}
+}*/
 
 #header-box h1 {
 	letter-spacing: 2px;
