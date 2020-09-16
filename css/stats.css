@@ -5,6 +5,14 @@
     padding: 1.25rem 2.5rem 1.25rem 1.5rem;
 }
 
+.box {
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+
 /* Counters icons */
 #github-followers::before {
     content: '👀';
@@ -19,4 +27,14 @@
 #github-repos::before {
     content: '📦';
     padding-right: 0.5rem;
+}
+
+/* Top Repos */
+#top-repos {
+    list-style-type: none;
+}
+
+#top-repos a {
+    text-decoration: none !important;
+    color: white !important;
 }
