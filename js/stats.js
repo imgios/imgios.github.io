@@ -8,6 +8,7 @@ async function getUserData() {
 
     fillUserData(resJson);
     getTopRepos();
+    getRecentActivities();
 }
 
 function fillUserData(data) {
@@ -42,4 +43,29 @@ function fillUserTopRepos(repos) {
         listItem.appendChild(element);
         document.getElementById('top-repos').appendChild(listItem);
     });
+}
+
+async function getRecentActivities() {
+    const res = await fetch(API_BASE_URL + '/events');
+    const resJson = await res.json();
+
+    fillRecentActivities(resJson);
+}
+
+function fillRecentActivities(activities) {
+    var commits = 0;
+    var i = 0;
+    while (commits < 5) {
+        activities[i].payload.commits.forEach(commit => {
+            const listItem = document.createElement('li');
+            const element = document.createElement('a');
+            element.href = commit.url.replace('api.github.com/repos','github.com').replace('commits','commit');
+            element.innerText = commit.message;
+
+            listItem.appendChild(element);
+            document.getElementById('recent-activities').appendChild(listItem);
+            commits+=1;
+        })
+        i+=1;
+    }
 }

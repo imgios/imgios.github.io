@@ -13,7 +13,7 @@
     padding: 1.25rem;
 }
 
-/* icons */
+/* Icons */
 #github-followers::before {
     content: '👀';
     padding-right: 0.5rem;
@@ -29,12 +29,25 @@
     padding-right: 0.5rem;
 }
 
-/* Top Repos */
-#top-repos {
+#recent-activities-heading::before {
+    content: '👨‍💻';
+    padding-right: 0.5rem;
+}
+
+/* Top Repos & Recent Activities*/
+#top-repos, #recent-activities {
     list-style-type: none;
 }
 
 #top-repos a {
     text-decoration: none !important;
     color: white !important;
+}
+
+#recent-activities a {
+    text-decoration: none !important;
+}
+
+#recent-activities a:hover {
+    text-decoration: underline !important;
 }
