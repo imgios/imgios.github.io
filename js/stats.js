@@ -87,5 +87,24 @@ function fillLanguagesUsed(repos) {
             languages[repo.language] = 1;
         }
     });
-    console.log(languages);
+    // Generating Pie Chart
+    const context = document.getElementById("languages-canvas");
+    let colors = [];
+    for (var i = 0; i < Object.keys(languages).length; i++) {
+        let rgba = 'rgba(' + Math.floor(Math.random() * 200) + ', '
+            + Math.floor(Math.random() * 200) + ', '
+            + Math.floor(Math.random() * 200) + ', 1)';
+        colors.push(rgba);
+    }
+    console.log(colors);
+    var chart = new Chart(context, {
+        type: 'pie',
+        data: {
+            labels: Object.keys(languages),
+            datasets: [{
+                data: Object.keys(languages).map(function (key) {return languages[key];}),
+                backgroundColor: colors
+            }],
+        },
+    });
 }
