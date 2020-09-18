@@ -37,7 +37,7 @@ function fillUserTopRepos(repos) {
     .forEach(repo => {
         const listItem = document.createElement('li');
         const element = document.createElement('a');
-        element.classList.add('badge', 'badge-primary')
+        element.classList.add('badge', 'badge-dark')
         element.href = repo.html_url;
         element.target = '_blank';
         element.innerText = repo.name;
