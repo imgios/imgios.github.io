@@ -53,10 +53,13 @@ async function getRecentActivities() {
 }
 
 function fillRecentActivities(activities) {
-    var commits = 0;
-    var i = 0;
+    let commits = 0;
+    let i = 0;
     while (commits < 5) {
-        activities[i].payload.commits.forEach(commit => {
+        for (let commit of activities[i].payload.commits) {
+            if (commits == 5) {
+                break;
+            }
             const listItem = document.createElement('li');
             const element = document.createElement('a');
             element.href = commit.url.replace('api.github.com/repos','github.com').replace('commits','commit');
@@ -65,7 +68,7 @@ function fillRecentActivities(activities) {
             listItem.appendChild(element);
             document.getElementById('recent-activities').appendChild(listItem);
             commits+=1;
-        })
+        }
         i+=1;
     }
 }
