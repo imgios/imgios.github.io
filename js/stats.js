@@ -10,6 +10,7 @@ async function getUserData() {
     let repos = await getRepos();
     fillUserTopRepos(repos);
     getRecentActivities();
+    fillLanguagesUsed(repos);
 }
 
 function fillUserData(data) {
@@ -74,4 +75,17 @@ function fillRecentActivities(activities) {
         }
         i+=1;
     }
+}
+
+function fillLanguagesUsed(repos) {
+    let languages = {};
+    repos.forEach(repo => {
+        if (repo.language != null && repo.language in languages) {
+            let count = languages[repo.language] + 1;
+            languages[repo.language] = count;
+        } else if (repo.language != null) {
+            languages[repo.language] = 1;
+        }
+    });
+    console.log(languages);
 }
