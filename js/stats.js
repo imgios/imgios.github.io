@@ -60,14 +60,16 @@ function fillRecentActivities(activities) {
             if (commits == 5) {
                 break;
             }
-            const listItem = document.createElement('li');
-            const element = document.createElement('a');
-            element.href = commit.url.replace('api.github.com/repos','github.com').replace('commits','commit');
-            element.innerText = commit.message;
+            if (activities[i].type == 'PushEvent') {
+                const listItem = document.createElement('li');
+                const element = document.createElement('a');
+                element.href = commit.url.replace('api.github.com/repos','github.com').replace('commits','commit');
+                element.innerText = commit.message;
 
-            listItem.appendChild(element);
-            document.getElementById('recent-activities').appendChild(listItem);
-            commits+=1;
+                listItem.appendChild(element);
+                document.getElementById('recent-activities').appendChild(listItem);
+                commits+=1;
+            }
         }
         i+=1;
     }
