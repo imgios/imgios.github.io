@@ -7,7 +7,8 @@ async function getUserData() {
     const resJson = await res.json();
 
     fillUserData(resJson);
-    getTopRepos();
+    let repos = await getRepos();
+    fillUserTopRepos(repos);
     getRecentActivities();
 }
 
@@ -21,11 +22,11 @@ function fillUserData(data) {
     document.getElementById("github-repos").innerText = data.public_repos;
 }
 
-async function getTopRepos() {
+async function getRepos() {
     const res = await fetch(API_BASE_URL + '/repos');
     const resJson = await res.json();
 
-    fillUserTopRepos(resJson);
+    return resJson;
 }
 
 function fillUserTopRepos(repos) {
