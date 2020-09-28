@@ -17,8 +17,9 @@ $(document).ready(function () {
 		} else {		
 			for (var i = 0; i < length; i++) {
 				var random = Math.floor(Math.random() * chars.length);
-				console.log(random);
-				console.log(chars[random]);
+				// debugging purposes
+				// console.log(random);
+				// console.log(chars[random]);
 				password += chars[random];
 			}
 			
