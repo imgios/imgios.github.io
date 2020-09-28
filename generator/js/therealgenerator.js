@@ -3,7 +3,7 @@
 */
 $(document).ready(function () {	
 	/**
-	*	@description This function create a new random string, choosing random chars from the var 'chars'.
+	*	@description This function creates a new random string, choosing random chars from the var 'chars'.
 	*/
 	$("#generatePsw").on("click", function(event) {
 		event.preventDefault();
@@ -27,7 +27,7 @@ $(document).ready(function () {
 	});
 
 	/**
-	*	@description This function copy the password generated inside the user clipboard.
+	*	@description This function copies the password generated inside the user clipboard.
 	*/
 	$("#pswCopy").on("click", function() {
 		event.preventDefault();
