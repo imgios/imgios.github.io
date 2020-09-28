@@ -6,4 +6,4 @@
 
 This repository is the :heart: of my static website, available on [giosuesulipano.it](https://giosuesulipano.it). The website is made with plain HTML and CSS, using the framework [Bootstrap](https://github.com/twbs/bootstrap), and the template is open source.
 
-[`/generator`](https://giosuesulipano.it/generator) is a tool built in javascript useful to generate random, fixed-lenght (8-128 chars) string with letters, numbers and symbols.
+[`/generator`](https://giosuesulipano.it/generator) is a tool built in jQuery useful to generate random, fixed-lenght (8-128 chars) string with letters, numbers and symbols.
