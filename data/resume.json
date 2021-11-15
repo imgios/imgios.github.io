@@ -1,0 +1,43 @@
+{
+  "contact": {
+    "email": "g.sulipano@outlook.it",
+    "telegram": "imgios",
+    "linkedin": "imgios",
+  },
+  "experience": [
+    {
+      "occupation": "Integration Engineer Intern",
+      "employer": "Ericsson",
+      "location": "Napoli, Italy",
+      "from": "14th September, 2021",
+      "to": "Ongoing",
+      "description": "The main object of this internship is to acquire skills on Network Orchestration focusing on ETSI MANO Standard and on cloud-native Telco application lifecycle. The internship plan contains several training activities on Python, Linux, OpenStack, Kubernetes & Docker, Helm, Ansible, Camunda, ONAP, and OPNFV."
+    },
+    {
+      "occupation": "Trainee Student",
+      "employer": "Università degli Studi di Salerno",
+      "location": "Fisciano, Italy",
+      "from": "May, 2019",
+      "to": "September, 2019",
+      "description": "Internship at the Data Science & Technologies laboratory of the University of Salerno, aimed at the development and implementation of an interface for displaying relaxed functional dependencies. This work was the subject of my bachelor's degree thesis and was carried out under the supervision of Prof. Vincenzo Deufemia and PhD. Loredana Caruccio, through the use of the following technologies: TypeScript, D3.js, Angular, Ionic."
+    },
+  ],
+  "education": [
+    {
+      "qualification": "Master's Degree in Computer Science, Information Systems and Software Technologies",
+      "school": "Università degli Studi di Salerno",
+      "from": "December, 2019",
+      "to": "Ongoing",
+      "description": "I'm attending a Computer Science Master's Degree, with focus on Information Systems and Software Technologies. Main subjects are about Software Engineering, Project Management and Cloud Computing.",
+      "grade": "N/A"
+    },
+    {
+      "qualification": "Bachelor's Degree in Computer Science",
+      "school": "Università degli Studi di Salerno",
+      "from": "September, 2016",
+      "to": "December, 2019",
+      "description": "Thesis: Implementation of an interface for displaying Relaxed Functional Dependencies.",
+      "grade": "98/110"
+    },
+  ],
+}
