@@ -35,9 +35,8 @@ main h1 {
 
 nav a {
   text-decoration: none;
+  color: #FF5D73;
 }
-
-/* .a #e11b35 */
 
 nav a:hover {
   text-decoration: underline;
