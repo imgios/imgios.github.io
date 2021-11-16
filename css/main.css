@@ -20,7 +20,6 @@ main {
 }
 
 .underline {
-  color: white !important;
 	background-image: linear-gradient(to right, #FF5D73, #FF5D73);
 	background-position: bottom left;
 	background-repeat: no-repeat;
