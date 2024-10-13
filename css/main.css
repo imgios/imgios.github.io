@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
 
+::selection {
+  background: #FF5D73;
+}
+
 body, html {
   height: 100%;
   font-family: 'Red Hat Mono', monospace !important;
