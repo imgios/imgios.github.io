@@ -1,0 +1,15 @@
+baseURL = 'https://giosuesulipano.it/'
+languageCode = 'en-us'
+title = 'Giosuè Sulipano'
+theme = 'not-much'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[params]
+palette = "catpuccin"
+showThemeNotice = true
