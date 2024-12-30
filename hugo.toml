@@ -11,5 +11,5 @@ theme = 'not-much'
       unsafe = false
 
 [params]
-palette = "catpuccin"
+palette = "default"
 showThemeNotice = true
