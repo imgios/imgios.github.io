@@ -13,3 +13,19 @@ theme = 'not-much'
 [params]
 palette = "default"
 showThemeNotice = true
+
+# Navigation
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    title = "home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts"
+    weight = 2
