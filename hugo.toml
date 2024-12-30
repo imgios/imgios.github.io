@@ -2,6 +2,7 @@ baseURL = 'https://giosuesulipano.it/'
 languageCode = 'en-us'
 title = 'Giosuè Sulipano'
 theme = 'not-much'
+copyright = "imgios © {year}"
 
 [markup]
   [markup.highlight]
