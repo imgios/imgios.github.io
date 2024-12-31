@@ -12,7 +12,7 @@ copyright = "imgios © {year}"
       unsafe = false
 
 [params]
-palette = "default"
+palette = "imgios"
 showThemeNotice = true
 
 # Navigation
