@@ -1,0 +1,32 @@
+baseURL = 'https://giosuesulipano.it/'
+languageCode = 'en-us'
+title = 'Giosuè Sulipano'
+theme = 'not-much'
+copyright = "imgios © {year}"
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[params]
+palette = "imgios"
+showThemeNotice = true
+
+# Navigation
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    title = "home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/posts"
+    weight = 2
