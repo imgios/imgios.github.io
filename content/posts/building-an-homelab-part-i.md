@@ -41,7 +41,7 @@ As I said before, reusing spare hardware can be a good way to start with a homel
 
 Currently, the only "spare" hardware being used is the switch, while the Raspberry Pis are brand new. I've decided to start this simple homelab with just a few nodes and see how it develops.
 
-![Homelab Topology](/images/simple-homelab-topology.png)
+![img](/images/simple-homelab-topology.png "Homelab Topology")
 
 ## Preparation
 
@@ -54,7 +54,7 @@ At this stage, it doesn't matter which method is used to make it work. I decided
 
 Once the modem's DHCP setting had been updated, I proceeded to flash the SD cards used to boot my Raspberry Pis. I had to struggle a bit with this step, not because it's difficult, but because my Raspberry Pis decided to reject the Raspberry Pi OS / Raspberry Pi OS Lite images. That said, after several tries I decided to go for the Ubuntu Server image. I used the Raspberry Pi Imager, selected the Ubuntu Server 64-bit image and customised the installation by providing the user to create with the password, hostname and network IP to set on the board.
 
-![Raspberry Pis Tower](/images/raspberry-tower.jpg)
+![img](/images/raspberry-tower.jpg "Raspberry Pis Tower")
 
 ## Verification
 
