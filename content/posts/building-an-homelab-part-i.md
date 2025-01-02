@@ -41,7 +41,7 @@ As I said before, reusing spare hardware can be a good way to start with a homel
 
 Currently, the only "spare" hardware being used is the switch, while the Raspberry Pis are brand new. I've decided to start this simple homelab with just a few nodes and see how it develops.
 
-![img](/images/simple-homelab-topology.png "Homelab Topology")
+{{< figure src="/images/simple-homelab-topology.png" title="Homelab Topology" >}}
 
 ## Preparation
 
