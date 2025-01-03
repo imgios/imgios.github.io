@@ -10,7 +10,7 @@ summary: "Recently, GitHub has introduced the profile-level README feature, that
 
 Recently, GitHub has introduced the profile-level README feature, that allows user to have a customizable box in their own GitHub profile.
 
-[{{< figure src="[/images/simple-homelab-topology.png](https://github-readme-stats.vercel.app/api/pin/?username=imgios&repo=imgios&show_owner=true)" title="Profile README Card" >}}](https://github.com/imgios/imgios)
+{{< figure src="https://github-readme-stats.vercel.app/api/pin/?username=imgios&repo=imgios&show_owner=true" title="Profile README Card" link="https://github.com/imgios/imgios" >}}
                                                                                                                                     
 ## What is it?
 
