@@ -1,6 +1,6 @@
 ---
-title = 'About'
-draft = false
+title: 'About'
+draft: false
 ---
 
 I graduated with a Bachelor's degree from the [University of Salerno](https://www.unisa.it/), defending a thesis on the _Implementation of an interface for displaying Relaxed Functional Dependencies_.
