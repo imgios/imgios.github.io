@@ -12,6 +12,7 @@ copyright = "imgios © {year}"
       unsafe = false
 
 [params]
+theme = "light"
 palette = "imgios"
 showThemeNotice = true
 
