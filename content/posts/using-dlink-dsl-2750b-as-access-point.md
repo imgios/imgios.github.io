@@ -54,7 +54,7 @@ I was expecting it to be quite challenging to configure, but instead it was quit
 
 The first step needs no explanation, just press the D-Link reset button.
 
-The **LAN setup** requires two steps to perform: first, I chose an IP (e.g., 192.168.1.2) as the D-Link address from the main gateway's internal subnet (e.g., 192.168.1.0/24), and later I will make sure that this IP won't be assigned by the gateway to any other device. Then I changed the DHCP settings to use the main gateway as the DHCP server, so I set the DHCP Relay option to the main gateway IP address (e.g., 192.168.1.1).
+The **LAN setup** requires two steps to perform: first, I chose an IP (e.g., `192.168.1.2`) as the D-Link address from the main gateway's internal subnet (e.g., `192.168.1.0/24`), and later I will make sure that this IP won't be assigned by the gateway to any other device. Then I changed the DHCP settings to use the main gateway as the DHCP server, so I set the DHCP Relay option to the main gateway IP address (e.g., `192.168.1.1`).
 
 The **Wireless setup** is no magic, just changing both the SSID and network password to something fancy and more complex.
 
