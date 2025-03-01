@@ -7,7 +7,7 @@ keywords: ["homelab", "docker", "kubernetes", "k3s", "raspberry pi"]
 summary: "Building an homelab with spare hardware and Raspberry Pis can be funny as well as educational. This post covers a Kubernetes homelab built by using two Raspberry Pi 4 nodes."
 ---
 
-Well, here I am. A cool tower consisting of two Raspberry Pis running Ubuntu Server 22.04, a switch and nothing else. The last post covers why I am building this simple homelab and how I set up both the network and the SBC boards. To recap, my network consists of a modem with DHCP enabled, configured to assign IPs from the 192.168.1.2/24 subnet. Even though the modem is allowed to assign any IP from the whole subnet, the SBC boards always get the same IP because I have configured their MAC address in the modem to give them a fixed one. I know this configuration isn't feasible with multiple machines, but I have other plans for the future if this homelab doesn't get killed.
+Well, here I am. A cool tower consisting of two Raspberry Pis running Ubuntu Server 22.04, a switch and nothing else. The last post covers why I am building this simple homelab and how I set up both the network and the SBC boards. To recap, my network consists of a modem with DHCP enabled, configured to assign IPs from the `192.168.1.2/24` subnet. Even though the modem is allowed to assign any IP from the whole subnet, the SBC boards always get the same IP because I have configured their MAC address in the modem to give them a fixed one. I know this configuration isn't feasible with multiple machines, but I have other plans for the future if this homelab doesn't get killed.
 
 With that little recap, we are ready to dive into the cluster creation.
 
