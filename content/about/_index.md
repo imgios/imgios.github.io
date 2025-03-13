@@ -10,3 +10,7 @@ During my studies, I became very interested in algorithms and data structures, a
 In 2018, I participated in the _Startup Weekend Caserta powered by Google for Entrepreneurs_, a 72-hour event where I built a business idea with 5 other strangers I met there. This project included activities such as several brainstorming sessions, creating a website to promote our business idea, creating and analysing end-user forms after completion, public engagement and public speaking.
 
 Apart from IT, in my spare time I enjoy riding my motorbike to explore new places, playing video games with friends and doing sports.
+
+Fun fact: I can type at close to 98 wpm
+
+![Monkeytype results: 98 WPM, 98% accuracy](https://github.com/user-attachments/assets/27c97b43-fc8a-4055-9824-c9327a7dd68d)
