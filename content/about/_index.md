@@ -13,4 +13,4 @@ Apart from IT, in my spare time I enjoy riding my motorbike to explore new place
 
 Fun fact: I can type at close to 98 wpm
 
-![Monkeytype results: 98 WPM, 98% accuracy](https://github.com/user-attachments/assets/27c97b43-fc8a-4055-9824-c9327a7dd68d)
+{{< figure src="https://github.com/user-attachments/assets/d32020c8-23d5-48e4-8a21-15433cd7ddc1" title="Monkeytype results: 98 WPM, 98% accuracy" >}}
