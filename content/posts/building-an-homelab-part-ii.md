@@ -77,7 +77,7 @@ pi02   Ready    <none>                 3d22h   v1.31.5+k3s1
 
 By default, K3s creates the [local-path-provisioner](https://github.com/rancher/local-path-provisioner) storage class which provides a way for the Kubernetes users to use the local storage on each node. In my case, I'll be attaching an SSD to both Pis and using that as the cluster block storage, instead of the Pis SD Cards.
 
-To do that, I'll be using [Longhorn](https://longhorn.io/)to do this, but first I need to prepare the SSD. Once attached to `pi01`, these actions are performed:
+To do that, I'll be using [Longhorn](https://longhorn.io/) to do this, but first I need to prepare the SSD. Once attached to `pi01`, these actions are performed:
 
 - Format the disk
 - Create `ext4` filesystem
