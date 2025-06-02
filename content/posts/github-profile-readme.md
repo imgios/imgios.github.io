@@ -2,7 +2,7 @@
 title: "touch README.md: GitHub Profile README.md"
 date: 2020-09-28
 draft: false
-toc: true
+toc: false
 tags: ["github"]
 keywords: ["github", "github profile readme"]
 summary: "Recently, GitHub has introduced the profile-level README feature, that allows user to have a customizable box in their own GitHub profile. How to make it?"
