@@ -2,7 +2,7 @@
 title: "Reviving a D-link DSL-2750B as access point in 2024"
 date: 2024-06-25
 draft: false
-toc: true
+toc: false
 tags: ["homelab", "networking"]
 keywords: ["homelab", "networking", "d-link", "access point"]
 summary: "In this post I share my thoughts and experience about using an old D-Link DSL 2750B as access point, after that my Wi-Fi range extender died."
