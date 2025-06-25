@@ -5,7 +5,7 @@
     --primary-variant: #FF1A39;
     --secondary: #FF1A39;
     --font-color: #1a1a1a;
-    --selection-color: #FF1A39;
+    --selection-color: black;
 }
 
 .dark {
@@ -15,7 +15,7 @@
     --primary-variant: #A5D7E8;
     --secondary: #2F58CD;
     --font-color: #f1f1f1;
-    --selection-color: #2F58CD;
+    --selection-color: black;
 }
 
 body {
