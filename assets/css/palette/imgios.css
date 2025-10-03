@@ -11,9 +11,9 @@
 .dark {
     --bg-color: #212121;
     --bg-variant: #212121;
-    --primary: #67aec5;
-    --primary-variant: #A5D7E8;
-    --secondary: #2F58CD;
+    --primary: #FF5D73;
+    --primary-variant: #FF1A39;
+    --secondary: #FF1A39;
     --font-color: #f1f1f1;
     --selection-color: black;
 }
